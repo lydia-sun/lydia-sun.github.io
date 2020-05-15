@@ -1,0 +1,81 @@
+.closed-folder {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+/* .opened-folder {
+    height: 100%;
+    overflow-y: default;
+} */
+
+.folder {
+    width: 85%;
+    position: relative;
+    /* overflow-y: auto; */
+    height: 100%;
+    border-width: thin;
+    border-color: #dfc0eb;
+}
+
+.tab-content img {
+    border-radius: 50%;
+    height: auto;
+    width: auto; 
+    max-width: 6rem;
+    max-height: 6rem;
+    background-color: #f7f0fa;
+    flex-basis: 100%;
+}
+
+#about .tab-content {
+    justify-content: space-around;
+}
+
+#about img {
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: #dfc0eb;
+    max-width: 8rem;
+    max-height: 8rem;
+}
+
+.internship {
+    margin: 0 0 3rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 0rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem 0 0 #dfc0eb;
+}
+
+.internship h2 {
+    flex-basis: 100%;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.internship p {
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #89609e;
+}
+
+#academic .tab-content{
+    align-items: space-around;
+}
+
+/* .internship img {
+    max-width: 6rem;
+    max-height: 6rem;
+    background-color: #f7f0fa;
+    flex-basis: 100%;
+} */
+
+.projects p {
+    color: #b491c8;
+}
+

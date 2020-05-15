@@ -1,0 +1,54 @@
+html {
+    background-color: #f7f0fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #663a82;
+}
+
+h2 {
+    color: #89609e;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h3 {
+    color: #89609e;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+p {
+    color: #89609e;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+li {
+    color: #89609e;
+    font-size: 0.9rem;
+}
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+    height: 100%;
+    overflow: auto;
+}
+
+button {
+    border-style: solid solid none;
+    border-width: thin;
+    border-color: #dfc0eb;
+    display: block;
+    background-color: oldlace;
+    color: #89609e;
+    padding: 0.1rem 1rem;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+}

@@ -1,0 +1,19 @@
+.layout {
+    margin: 1rem auto;
+    padding: 0 5rem;
+    height: 100%;
+    position: relative;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
