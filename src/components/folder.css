@@ -3,11 +3,6 @@
     overflow-y: hidden;
 }
 
-/* .opened-folder {
-    height: 100%;
-    overflow-y: default;
-} */
-
 .folder {
     width: 85%;
     position: relative;
@@ -15,6 +10,21 @@
     height: 100%;
     border-width: thin;
     border-color: #dfc0eb;
+}
+
+#frontTab {
+    width: 100%;
+    border-style: none;
+}
+
+#frontTab .visibility-wrapper {
+    height: 100%;
+    background-color: #f7f0fa;
+    border-style: none;
+}
+
+#frontTab button {
+    visibility: hidden;
 }
 
 .tab-content img {

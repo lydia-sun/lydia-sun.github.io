@@ -22,13 +22,18 @@ class Tab extends React.Component {
   render() {
     let tabOpen = {
       ease: "easeOut",
-      duration: 0.5,
+      duration: 0.75,
     } 
     return (
-      <motion.div id={this.props.idx} onClick={() => {this.handler(); this.props.handler();}} className={`tab + ${this.state.display ? "opened-tab" : "closed-tab"} + ${this.props.display ? "one-open" : "all-closed"}`} positionTransition={tabOpen} whileHover={{ scale: 1.04}}> 
-        <button disabled={this.props.display && !this.state.display} >{this.props.label}</button>
-        <div className="tab-content">
-          {this.props.children}
+      <motion.div id={this.props.idx} onClick={this.props.disabled ? null : () => {this.handler(); this.props.handler();}}
+      className={`tab + ${this.state.display ? "opened-tab" : "closed-tab"} + ${this.props.display ? "one-open" : "all-closed"}`}
+      positionTransition={tabOpen}
+      whileHover={{ scale: this.props.disabled ? 1.0 : 1.04}}> 
+        <button>{this.props.label}</button>
+        <div className="visibility-wrapper">
+          <div className="tab-content">
+            {this.props.children}
+          </div>
         </div>
     </motion.div>
     )

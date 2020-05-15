@@ -68,7 +68,7 @@ class Folder extends React.Component {
                 </ul>
               </div>
             </Tab>
-            <Tab idx="academic" label="Academic Projects" className="projects" handler={this.handler} display={this.state.opened}>
+            <Tab idx="academic" label="Projects" className="projects" handler={this.handler} display={this.state.opened}>
                 <Card title="Roomba, Go" desc="A gesture recognition system for the Roomba." imgSrc={fruit}>
                   <p>Created for MIT's mobile and sensor computing class (6.808)</p>
                   <p></p>
@@ -86,10 +86,9 @@ class Folder extends React.Component {
                   <p>Recreated popular video game Fruit Ninja on an FPGA (field programmable gate array) in Verilog</p>
                 </Card>
             </Tab>
-            <Tab idx="personal" label="Personal Projects" handler={this.handler} display={this.state.opened}/>
             <Tab idx="skills" label="Skills" handler={this.handler} display={this.state.opened}/>
             <Tab idx="interests" label="Interests" handler={this.handler} display={this.state.opened}/>
-            {/* <div className="folder-front">s';dlk</div> */}
+            <Tab idx="frontTab" label="" handler={this.handler} display={this.state.opened} disabled={true}/>
         </motion.div>
      )
    }
