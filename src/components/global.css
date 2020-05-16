@@ -5,11 +5,16 @@ html {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5rem 0 0 0;
 }
 
 h1 {
   font-size: 3rem;
   color: #663a82;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -34,7 +39,7 @@ p {
 }
 
 img {
-  margin: 1rem;
+  margin: 0.75rem;
 }
 
 li {
@@ -60,4 +65,39 @@ button {
   padding: 0.1rem 1rem;
   border-radius: 15px 15px 0px 0px;
   position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    justify-content: center;
+  }
+  h1 {
+    font-size: 2.4rem;
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max_width: 650px) {
+  h2 {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 0.75rem;
+  }
+  #about p {
+    text-align: left;
+  }
+  #academic p {
+    line-height: 1rem;
+  }
+  .back-class p {
+    text-align: left;
+  }
 }

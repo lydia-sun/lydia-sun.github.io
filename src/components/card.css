@@ -28,3 +28,18 @@
 .back-class p {
   text-align: justify;
 }
+
+.front-class p {
+  margin: 0.75rem 0 0;
+}
+
+.card-prompt {
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card-prompt p {
+  font-size: 0.7rem;
+  color: #dfc0eb;
+}

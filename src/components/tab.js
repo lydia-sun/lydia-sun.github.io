@@ -1,5 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
+import { isMobile } from "react-device-detect"
 import "../components/tab.css"
 
 class Tab extends React.Component {
@@ -15,23 +16,23 @@ class Tab extends React.Component {
     this.setState({ display: false })
   }
 
-  handler() {
+  handler(e) {
     this.setState({ display: !this.state.display })
   }
 
   render() {
     let tabOpen = {
       ease: "easeOut",
-      duration: 0.75,
+      duration: 0.25,
     }
     return (
       <motion.div
         id={this.props.idx}
         onClick={
-          this.props.disabled
+          this.props.disabled || isMobile
             ? null
-            : () => {
-                this.handler()
+            : e => {
+                this.handler(e)
                 this.props.handler()
               }
         }
@@ -41,7 +42,18 @@ class Tab extends React.Component {
         positionTransition={tabOpen}
         whileHover={{ scale: this.props.disabled ? 1.0 : 1.04 }}
       >
-        <button>{this.props.label}</button>
+        <button
+          onClick={
+            this.props.disabled || !isMobile
+              ? null
+              : e => {
+                  this.handler(e)
+                  this.props.handler()
+                }
+          }
+        >
+          {this.props.label}
+        </button>
         <div className="visibility-wrapper">
           <div className="tab-content">{this.props.children}</div>
         </div>

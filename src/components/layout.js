@@ -6,7 +6,10 @@ let iconColor = "#b491c8"
 
 let iconStyle = {
   backgroundImage: `none`,
-  marginLeft: `0.75rem`,
+  margin: `0 0.25rem`,
+  padding: `0`,
+  width: `2rem`,
+  height: `2rem`,
 }
 
 export default function Layout({ children }) {
@@ -21,16 +24,19 @@ export default function Layout({ children }) {
             bgColor={iconColor}
           />
           <SocialIcon
+            className="icon"
             url="https://github.com/lydiasun1"
             style={iconStyle}
             bgColor={iconColor}
           />
           <SocialIcon
+            className="icon"
             url="https://www.linkedin.com/in/lydia-sun"
             style={iconStyle}
             bgColor={iconColor}
           />
           <SocialIcon
+            className="icon"
             url="mailto:lydia.sun.4@gmail.com"
             style={iconStyle}
             bgColor={iconColor}

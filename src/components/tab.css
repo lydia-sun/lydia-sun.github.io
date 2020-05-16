@@ -17,15 +17,15 @@
   /* top: 100%; */
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 0.75s, opacity 0.75s linear,
-    max-height 0.75s ease-out;
+  transition: visibility 0s 0.25s, opacity 0.25s linear,
+    max-height 0.25s ease-out;
 }
 
 .closed-tab.all-closed {
   max-height: 100% !important;
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.25s linear, max-height 0.75s ease-in;
+  transition: opacity 0.25s linear, max-height 0.25s ease-in;
 }
 
 .one-open {
@@ -85,13 +85,13 @@
 }
 
 .closed-tab .tab-content {
-  opacity: 0.3;
-  transition: opacity 0.75s linear;
+  opacity: 0.1;
+  transition: opacity 0.2s linear;
 }
 
-.opened-tab tab-content {
+.opened-tab .tab-content {
   opacity: 1;
-  transition: opacity 0.25s linear;
+  transition: opacity 0.2s linear;
 }
 
 .tab-content {

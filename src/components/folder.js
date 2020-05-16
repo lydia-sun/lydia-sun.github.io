@@ -3,6 +3,7 @@ import Tab from "./tab"
 import Card from "./card"
 import "./folder.css"
 import { motion } from "framer-motion"
+import { BrowserView, MobileView } from "react-device-detect"
 import lydia from "./img/lydia.jpeg"
 import meraki from "./img/meraki.png"
 import twitch from "./img/twitch.png"
@@ -134,7 +135,7 @@ class Folder extends React.Component {
         >
           <Card
             title="Roomba Go"
-            desc="A gesture recognition system for controlling the Roomba smart vacuum."
+            desc="A smart vacuum gesture control system."
             imgSrc={roomba}
             width={400}
           >
@@ -205,7 +206,12 @@ class Folder extends React.Component {
           <div className="hover-container">
             <div className="hover-card">
               <h2>Programming</h2>
-              <p className="hover-prompt">(hover for more)</p>
+              <MobileView>
+                <p className="hover-prompt">(tap for details)</p>
+              </MobileView>
+              <BrowserView>
+                <p className="hover-prompt">(hover for details)</p>
+              </BrowserView>
             </div>
             <div className="overlay">
               <div className="overlay-text">
@@ -221,7 +227,12 @@ class Folder extends React.Component {
           <div className="hover-container">
             <div className="hover-card">
               <h2>Technologies</h2>
-              <p className="hover-prompt">(hover for more)</p>
+              <MobileView>
+                <p className="hover-prompt">(tap for details)</p>
+              </MobileView>
+              <BrowserView>
+                <p className="hover-prompt">(hover for details)</p>
+              </BrowserView>
             </div>
             <div className="overlay">
               <div className="overlay-text">
@@ -235,7 +246,12 @@ class Folder extends React.Component {
           <div className="hover-container">
             <div className="hover-card">
               <h2>Spoken Languages</h2>
-              <p className="hover-prompt">(hover for more)</p>
+              <MobileView>
+                <p className="hover-prompt">(tap for details)</p>
+              </MobileView>
+              <BrowserView>
+                <p className="hover-prompt">(hover for details)</p>
+              </BrowserView>
             </div>
             <div className="overlay">
               <div className="overlay-text">

@@ -38,7 +38,7 @@
 }
 
 #about .tab-content {
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   justify-content: space-around;
   align-items: center;
 }
@@ -52,7 +52,7 @@
 }
 
 #about p {
-  width: 70%;
+  width: 100%;
   text-align: justify;
   margin: 1rem;
 }
@@ -84,6 +84,8 @@
 
 .internship img {
   flex-basis: 100%;
+  max-width: auto;
+  max-height: 30%;
 }
 
 #academic .tab-content {
@@ -126,10 +128,6 @@
   height: 100%;
 }
 
-/* .hover-card p {
-  font-size: 1.3rem;
-} */
-
 .overlay {
   display: flex;
   align-items: center;
@@ -152,7 +150,13 @@
   border-radius: 50%;
 }
 
-.hover-container:hover .overlay {
+@media (hover: hover) and (pointer: fine) {
+  .hover-container:hover .overlay {
+    opacity: 1;
+  }
+}
+
+.hover-container:active .overlay {
   opacity: 1;
 }
 
@@ -189,4 +193,44 @@
   margin: 0;
   font-size: 0.75rem;
   color: #dfc0eb;
+}
+
+@media screen and (max-width: 950px) {
+  .hover-container h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  #skills .hover-container {
+    /* height: 0%; */
+    width: 100%;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .internship {
+    width: 90%;
+    margin: 0 0 1rem;
+  }
+
+  .internship li {
+    font-size: 0.6rem;
+    line-height: 0.75rem;
+  }
+
+  .internship p {
+    font-size: 0.6rem;
+  }
+
+  .internship h2 {
+    font-size: 0.75rem;
+    margin: 1rem 0 0;
+  }
+
+  .internshp img {
+    margin: 0;
+  }
 }
