@@ -1,91 +1,192 @@
 .closed-folder {
-    height: 100%;
-    overflow-y: hidden;
+  height: 100%;
+  overflow-y: hidden;
 }
 
 .folder {
-    width: 85%;
-    position: relative;
-    /* overflow-y: auto; */
-    height: 100%;
-    border-width: thin;
-    border-color: #dfc0eb;
+  width: 85%;
+  position: relative;
+  /* overflow-y: auto; */
+  height: 100%;
+  border-width: thin;
+  border-color: #dfc0eb;
 }
 
 #frontTab {
-    width: 100%;
-    border-style: none;
+  width: 100%;
+  border-style: none;
 }
 
 #frontTab .visibility-wrapper {
-    height: 100%;
-    background-color: #f7f0fa;
-    border-style: none;
+  height: 100%;
+  background-color: #f7f0fa;
+  border-style: none;
 }
 
 #frontTab button {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .tab-content img {
-    border-radius: 50%;
-    height: auto;
-    width: auto; 
-    max-width: 6rem;
-    max-height: 6rem;
-    background-color: #f7f0fa;
-    flex-basis: 100%;
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+  max-width: 8rem;
+  max-height: 8rem;
+  background-color: #f7f0fa;
+  /* flex-basis: 100%; */
 }
 
 #about .tab-content {
-    justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #about img {
-    border-style: solid;
-    border-width: 0.5rem;
-    border-color: #dfc0eb;
-    max-width: 8rem;
-    max-height: 8rem;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: #dfc0eb;
+  max-width: 8rem;
+  max-height: 8rem;
+}
+
+#about p {
+  width: 70%;
+  text-align: justify;
+  margin: 1rem;
 }
 
 .internship {
-    margin: 0 0 3rem 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: white;
-    padding: 0rem 1rem;
-    border-radius: 2rem;
-    box-shadow: 0.5rem 0.5rem 0 0 #dfc0eb;
+  margin: 0 0 3rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 0rem 1rem;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 0 0 #dfc0eb;
 }
 
 .internship h2 {
-    flex-basis: 100%;
-    margin: 2rem 0 0.5rem 0;
+  flex-basis: 100%;
+  margin: 2rem 0 0.5rem 0;
 }
 
 .internship p {
-    flex-basis: 100%;
-    text-align: center;
-    font-size: 0.75rem;
-    color: #89609e;
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #89609e;
 }
 
-#academic .tab-content{
-    align-items: space-around;
+.internship img {
+  flex-basis: 100%;
 }
 
-/* .internship img {
-    max-width: 6rem;
-    max-height: 6rem;
-    background-color: #f7f0fa;
-    flex-basis: 100%;
+#academic .tab-content {
+  align-items: space-around;
+}
+
+#interests img {
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: #dfc0eb;
+  margin: 0;
+  width: 8rem;
+  height: 8rem;
+}
+
+#skills .hover-container {
+  padding: 1rem;
+  position: relative;
+  height: 8rem;
+  width: 40%;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 1.5rem;
+}
+
+#interests .hover-container {
+  position: relative;
+  height: 8rem;
+  width: 8rem;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 50%;
+}
+
+#skills .hover-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+/* .hover-card p {
+  font-size: 1.3rem;
 } */
 
-.projects p {
-    color: #b491c8;
+.overlay {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #b491c8;
+  border-radius: 1.5rem;
 }
 
+.img-hover .overlay {
+  background-color: #dfc0eb;
+  border-radius: 50%;
+}
+
+.hover-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#interests .overlay-text {
+  justify-content: center;
+}
+
+.overlay-text ul {
+  margin: 0 2rem;
+}
+
+.overlay-text li {
+  color: white;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.overlay-text p {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.hover-card .hover-prompt {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.75rem;
+  color: #dfc0eb;
+}

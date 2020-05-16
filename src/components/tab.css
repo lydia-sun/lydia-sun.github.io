@@ -1,102 +1,103 @@
 .tab {
-    width: 90%;
-    position: absolute;
-    height: 100%;
+  width: 90%;
+  position: absolute;
+  height: 100%;
 }
 
 .opened-tab {
-    top: 3% !important;
-    left: 5% !important;
-    height: 100%;
-    /* z-index: 1; */
+  top: 3% !important;
+  left: 5% !important;
+  height: 100%;
+  /* z-index: 1; */
 }
 
 .closed-tab.one-open {
-    max-height: 10% !important;
-    overflow: hidden;
-    /* top: 100%; */
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 0.75s, opacity 0.75s linear, max-height 0.75s ease-out;
+  max-height: 10% !important;
+  overflow: hidden;
+  /* top: 100%; */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.75s, opacity 0.75s linear,
+    max-height 0.75s ease-out;
 }
 
 .closed-tab.all-closed {
-    max-height: 100% !important;
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.25s linear, max-height 0.75s ease-in;
+  max-height: 100% !important;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.25s linear, max-height 0.75s ease-in;
 }
 
 .one-open {
-    top: 100%;
+  top: 100%;
 }
 
 #frontTab.all-closed {
-    top: 60%;
+  top: 60%;
 }
 
 #interests.all-closed {
-    top: 45%;
+  top: 45%;
 }
 
 #skills.all-closed {
-    top: 35%;
+  top: 35%;
 }
 
 #academic.all-closed {
-    top: 25%;
+  top: 25%;
 }
 
 #work.all-closed {
-    top: 15%;
+  top: 15%;
 }
 
 #about.all-closed {
-    top: 5%;
+  top: 5%;
 }
 
 #about {
-    left: 2%;
+  left: 2%;
 }
 
 #work {
-    left: 3.2%;
+  left: 3.2%;
 }
 
 #academic {
-    left: 4.4%;
+  left: 4.4%;
 }
 
 #skills {
-    left: 5.6%;
+  left: 5.6%;
 }
 
 #interests {
-    left: 6.8%;
+  left: 6.8%;
 }
 
 .visibility-wrapper {
-    background-color: oldlace; 
-    border-style: solid;
-    border-width: thin;
-    border-color: #dfc0eb;
-    border-radius: 0px 30px 0px 0px;
+  background-color: oldlace;
+  border-style: solid;
+  border-width: thin;
+  border-color: #dfc0eb;
+  border-radius: 0px 30px 0px 0px;
 }
 
 .closed-tab .tab-content {
-    opacity: 0.3;
-    transition: opacity 0.75s linear;
+  opacity: 0.3;
+  transition: opacity 0.75s linear;
 }
 
 .opened-tab tab-content {
-    opacity: 1;
-    transition: opacity 0.25s linear;
+  opacity: 1;
+  transition: opacity 0.25s linear;
 }
 
-.tab-content {  
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 5%; 
+.tab-content {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5%;
 }

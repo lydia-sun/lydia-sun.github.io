@@ -13,8 +13,10 @@ My first React site, made with Gatsby by JS. Lots of trial and error, and duct t
 <button onclick="lydiasun1.github.io">Visit live site here</button>
 
 ## Used Libraries
+
 - [Framer Motion](https://www.framer.com/api/motion/)
 
 ## Used Packages
+
 - [react-social-icons](https://www.npmjs.com/package/react-social-icons)
 - [react-png-flipcard](https://www.npmjs.com/package/react-png-flipcard)
