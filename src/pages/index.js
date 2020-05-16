@@ -6,10 +6,6 @@ import "../components/global.css"
 export default function Home() {
   return (
     <Layout>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto"
-      ></link>
       <Folder />
     </Layout>
   )
