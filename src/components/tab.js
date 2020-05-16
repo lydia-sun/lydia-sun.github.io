@@ -40,7 +40,7 @@ class Tab extends React.Component {
           this.state.display ? "opened-tab" : "closed-tab"
         } + ${this.props.display ? "one-open" : "all-closed"}`}
         positionTransition={tabOpen}
-        whileHover={{ scale: this.props.disabled ? 1.0 : 1.04 }}
+        whileHover={{ scale: this.props.disabled || isMobile ? 1.0 : 1.04 }}
       >
         <button
           onClick={

@@ -6,7 +6,6 @@
 .folder {
   width: 85%;
   position: relative;
-  /* overflow-y: auto; */
   height: 100%;
   border-width: thin;
   border-color: #dfc0eb;
@@ -14,12 +13,12 @@
 
 #frontTab {
   width: 100%;
-  border-style: none;
 }
 
 #frontTab .visibility-wrapper {
   height: 100%;
   background-color: #f7f0fa;
+  border-radius: 0px;
   border-style: none;
 }
 
@@ -34,11 +33,9 @@
   max-width: 8rem;
   max-height: 8rem;
   background-color: #f7f0fa;
-  /* flex-basis: 100%; */
 }
 
 #about .tab-content {
-  /* flex-wrap: nowrap; */
   justify-content: space-around;
   align-items: center;
 }
@@ -79,13 +76,13 @@
   flex-basis: 100%;
   text-align: center;
   font-size: 0.75rem;
-  color: #89609e;
+  color: #dfc0eb;
 }
 
 .internship img {
   flex-basis: 100%;
-  max-width: auto;
-  max-height: 30%;
+  max-width: 8rem;
+  max-height: 8rem;
 }
 
 #academic .tab-content {
@@ -131,7 +128,6 @@
 .overlay {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -150,11 +146,11 @@
   border-radius: 50%;
 }
 
-/* @media (hover: hover) and (pointer: fine) {
+@media (hover: hover) and (pointer: fine) {
   .hover-container:hover .overlay {
     opacity: 1;
   }
-} */
+}
 
 .hover-container:active .overlay {
   opacity: 1;
@@ -194,7 +190,7 @@
 }
 
 .hover-prompt p {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
   color: #dfc0eb;
 }
 
@@ -233,7 +229,8 @@
     margin: 1rem 0 0;
   }
 
-  .internshp img {
-    margin: 0;
+  .internship img {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
   }
 }
