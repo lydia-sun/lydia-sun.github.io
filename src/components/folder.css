@@ -146,13 +146,13 @@
   border-radius: 50%;
 }
 
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   .hover-container:hover .overlay {
     opacity: 1;
   }
-}
+} */
 
-.hover-container:active .overlay {
+.hover-container:hover .overlay {
   opacity: 1;
 }
 
