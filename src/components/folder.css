@@ -150,11 +150,11 @@
   border-radius: 50%;
 }
 
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   .hover-container:hover .overlay {
     opacity: 1;
   }
-}
+} */
 
 .hover-container:active .overlay {
   opacity: 1;
@@ -188,10 +188,13 @@
   font-size: 1rem;
 }
 
-.hover-card .hover-prompt {
+.hover-prompt {
   flex-basis: 100%;
   margin: 0;
-  font-size: 0.75rem;
+}
+
+.hover-prompt p {
+    font-size: 0.75rem;
   color: #dfc0eb;
 }
 

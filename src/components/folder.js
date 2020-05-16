@@ -206,12 +206,13 @@ class Folder extends React.Component {
           <div className="hover-container">
             <div className="hover-card">
               <h2>Programming</h2>
+              <div className="hover-prompt">
               <MobileView>
-                <p className="hover-prompt">(tap for details)</p>
+                <p>(tap for details)</p>
               </MobileView>
               <BrowserView>
-                <p className="hover-prompt">(hover for details)</p>
-              </BrowserView>
+                <p>(hover for details)</p>             
+              </BrowserView></div>
             </div>
             <div className="overlay">
               <div className="overlay-text">
@@ -227,12 +228,13 @@ class Folder extends React.Component {
           <div className="hover-container">
             <div className="hover-card">
               <h2>Technologies</h2>
+              <div className="hover-prompt">
               <MobileView>
-                <p className="hover-prompt">(tap for details)</p>
+                <p>(tap for details)</p>
               </MobileView>
               <BrowserView>
-                <p className="hover-prompt">(hover for details)</p>
-              </BrowserView>
+                <p>(hover for details)</p>             
+              </BrowserView></div>
             </div>
             <div className="overlay">
               <div className="overlay-text">
@@ -246,12 +248,13 @@ class Folder extends React.Component {
           <div className="hover-container">
             <div className="hover-card">
               <h2>Spoken Languages</h2>
+              <div className="hover-prompt">
               <MobileView>
-                <p className="hover-prompt">(tap for details)</p>
+                <p>(tap for details)</p>
               </MobileView>
               <BrowserView>
-                <p className="hover-prompt">(hover for details)</p>
-              </BrowserView>
+                <p>(hover for details)</p>             
+              </BrowserView></div>
             </div>
             <div className="overlay">
               <div className="overlay-text">
