@@ -65,12 +65,8 @@ class Folder extends React.Component {
             primarily interested in Internet of Things and full-stack
             engineering.
           </p>
-          <p className="footer-text">
-            This site is a React app made with GatsbyJS. Please feel free to
-            check out the repo{" "}
-            <a href="https://github.com/lydiasun1/portfolio" target="_blank" rel="noopener noreferrer">here</a>, or to
-            leave commments and suggestions.
-          </p>
+          <SocialIcon url="github.com/lydiasun1/portflio" style={iconStyle} bgColor={iconColor}></SocialIcon>
+          <p className="small-text">Visit the site repo here.</p>
         </Tab>
         <Tab
           idx="work"
@@ -161,11 +157,6 @@ class Folder extends React.Component {
               receiver/transmitter modules, gyroscope
             </p>
             <p>Programming skills: C++</p>
-            <SocialIcon
-              url="https://github.mit.edu/jquaye/6.808-final"
-              style={iconStyle}
-              bgColor={iconColor}
-            ></SocialIcon>
           </Card>
           <Card
             title="PSoC Drawing Tablet"
@@ -218,11 +209,6 @@ class Folder extends React.Component {
               humidity sensors, solenoid valves
             </p>
             <p>Programming skills: C++, Python, SQL</p>
-            <SocialIcon
-              url="https://github.mit.edu/audace/garduino"
-              style={iconStyle}
-              bgColor={iconColor}
-            ></SocialIcon>
           </Card>
         </Tab>
         <Tab

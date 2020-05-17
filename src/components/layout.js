@@ -20,7 +20,6 @@ export default function Layout({ children }) {
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
           <h1>Lydia Sun.</h1>
         </Link>
-
         <div className="social-icons">
           <SocialIcon
             url="https://www.youtube.com/user/ghravel"

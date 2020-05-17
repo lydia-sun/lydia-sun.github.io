@@ -33,7 +33,7 @@
 }
 
 #frontTab.all-closed {
-  top: 60%;
+  top: 70%;
 }
 
 #interests.all-closed {
@@ -85,7 +85,7 @@
 }
 
 .closed-tab .tab-content {
-  opacity: 0.1;
+  opacity: 0;
   transition: opacity 0.2s linear;
 }
 

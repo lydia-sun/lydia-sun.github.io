@@ -19,7 +19,7 @@
   height: 100%;
   background-color: #f7f0fa;
   border-radius: 0px;
-  border-style: none;
+  border-style: dashed none none none;
 }
 
 #frontTab button {
@@ -33,11 +33,6 @@
   max-width: 8rem;
   max-height: 8rem;
   background-color: #f7f0fa;
-}
-
-#about .tab-content {
-  justify-content: space-around;
-  align-items: center;
 }
 
 #about img {
@@ -54,9 +49,11 @@
   margin: 1rem;
 }
 
-.footer-text {
+#about .small-text {
+  text-align: center;
+  font-size: smaller;
+  margin: 0.3rem;
   color: #dfc0eb;
-  font-size: 0.75rem;
 }
 
 .internship {
