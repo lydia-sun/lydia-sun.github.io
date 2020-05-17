@@ -54,6 +54,11 @@
   margin: 1rem;
 }
 
+.footer-text {
+  color: #dfc0eb;
+  font-size: 0.75rem;
+}
+
 .internship {
   margin: 0 0 3rem 0;
   width: 100%;
@@ -154,6 +159,7 @@
 
 .hover-container:hover .overlay {
   opacity: 1;
+  transition: opacity 0.25s ease;
 }
 
 .overlay-text {
@@ -199,6 +205,7 @@
     font-size: 1rem;
   }
 }
+
 @media screen and (max-width: 750px) {
   #skills .hover-container {
     /* height: 0%; */

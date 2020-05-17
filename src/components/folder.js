@@ -3,7 +3,8 @@ import Tab from "./tab"
 import Card from "./card"
 import "./folder.css"
 import { motion } from "framer-motion"
-import { BrowserView, MobileView } from "react-device-detect"
+import { BrowserView, MobileOnlyView } from "react-device-detect"
+import { SocialIcon } from "react-social-icons"
 import lydia from "./img/lydia.jpeg"
 import meraki from "./img/meraki.png"
 import twitch from "./img/twitch.png"
@@ -17,6 +18,12 @@ import anthro from "./img/anthro.png"
 import earth from "./img/earth.png"
 import book from "./img/book.png"
 import dance from "./img/dance.png"
+
+let iconColor = "#dfc0eb"
+
+let iconStyle = {
+  backgroundImage: `none`,
+}
 
 class Folder extends React.Component {
   constructor(props) {
@@ -57,6 +64,12 @@ class Folder extends React.Component {
             full-time software engineering role in the Bay Area, CA. I'm
             primarily interested in Internet of Things and full-stack
             engineering.
+          </p>
+          <p className="footer-text">
+            This site is a React app made with GatsbyJS. Please feel free to
+            check out the repo{" "}
+            <a href="https://github.com/lydiasun1/portfolio">here</a>, or to
+            leave commments and suggestions.
           </p>
         </Tab>
         <Tab
@@ -148,6 +161,11 @@ class Folder extends React.Component {
               receiver/transmitter modules, gyroscope
             </p>
             <p>Programming skills: C++</p>
+            <SocialIcon
+              url="https://github.mit.edu/jquaye/6.808-final"
+              style={iconStyle}
+              bgColor={iconColor}
+            ></SocialIcon>
           </Card>
           <Card
             title="PSoC Drawing Tablet"
@@ -179,6 +197,11 @@ class Folder extends React.Component {
               Bluetooth modules
             </p>
             <p>Programming skills: Arduino, C++, Verilog</p>
+            <SocialIcon
+              url="https://github.com/lydiasun1/6.111-final"
+              style={iconStyle}
+              bgColor={iconColor}
+            ></SocialIcon>
           </Card>
           <Card
             title="Garduino"
@@ -195,6 +218,11 @@ class Folder extends React.Component {
               humidity sensors, solenoid valves
             </p>
             <p>Programming skills: C++, Python, SQL</p>
+            <SocialIcon
+              url="https://github.mit.edu/audace/garduino"
+              style={iconStyle}
+              bgColor={iconColor}
+            ></SocialIcon>
           </Card>
         </Tab>
         <Tab
@@ -207,9 +235,9 @@ class Folder extends React.Component {
             <div className="hover-card">
               <h2>Programming</h2>
               <div className="hover-prompt">
-                <MobileView>
+                <MobileOnlyView>
                   <p>(tap for details)</p>
-                </MobileView>
+                </MobileOnlyView>
                 <BrowserView>
                   <p>(hover for details)</p>
                 </BrowserView>
@@ -230,9 +258,9 @@ class Folder extends React.Component {
             <div className="hover-card">
               <h2>Technologies</h2>
               <div className="hover-prompt">
-                <MobileView>
+                <MobileOnlyView>
                   <p>(tap for details)</p>
-                </MobileView>
+                </MobileOnlyView>
                 <BrowserView>
                   <p>(hover for details)</p>
                 </BrowserView>
@@ -251,9 +279,9 @@ class Folder extends React.Component {
             <div className="hover-card">
               <h2>Spoken Languages</h2>
               <div className="hover-prompt">
-                <MobileView>
+                <MobileOnlyView>
                   <p>(tap for details)</p>
-                </MobileView>
+                </MobileOnlyView>
                 <BrowserView>
                   <p>(hover for details)</p>
                 </BrowserView>

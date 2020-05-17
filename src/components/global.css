@@ -44,6 +44,17 @@ p {
   margin: 0;
 }
 
+a {
+  color: #b491c8;
+  background-image: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #dfc0eb;
+  transition: color 0.1s ease;
+}
+
 img {
   margin: 0.75rem;
 }
