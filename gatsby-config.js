@@ -20,9 +20,9 @@ module.exports = {
         name: "LydiaSun",
         short_name: "LydiaSun",
         start_url: "/",
-        // background_color: "#6b37bf",
-        // theme_color: "#6b37bf",
-        // display: "standalone",
+        background_color: "#6b37bf",
+        theme_color: "#6b37bf",
+        display: "standalone",
         icon: "src/components/img/favicon.png", // This path is relative to the root of the site
       },
     },
