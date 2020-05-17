@@ -17,12 +17,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `LydiaSun`,
-        short_name: `LydiaSun`,
-        start_url: `/`,
-        // background_color: `#f7f0eb`,
-        // theme_color: `#a2466c`,
-        // display: `standalone`,
+        name: "LydiaSun",
+        short_name: "LydiaSun",
+        start_url: "/",
+        // background_color: "#6b37bf",
+        // theme_color: "#6b37bf",
+        // display: "standalone",
+        icon: "src/components/img/favicon.png", // This path is relative to the root of the site
       },
     },
   ],
