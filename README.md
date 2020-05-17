@@ -10,7 +10,7 @@
 
 My first React site, made with Gatsby by JS. Lots of trial and error, and duct taping pieces of code together.
 
-Visit live site [here](lydiasun1.github.io/portfolio)
+Visit live site at [lydiasun.me](lydiasun.me)
 
 ## Used Libraries
 

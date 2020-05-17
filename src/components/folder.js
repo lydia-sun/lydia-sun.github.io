@@ -46,7 +46,7 @@ class Folder extends React.Component {
   render() {
     return (
       <motion.div
-        className={`folder + ${
+        className={`folder ${
           this.state.opened ? "opened-folder" : "closed-folder"
         }`}
         positionTransition
@@ -68,7 +68,7 @@ class Folder extends React.Component {
           <p className="footer-text">
             This site is a React app made with GatsbyJS. Please feel free to
             check out the repo{" "}
-            <a href="https://github.com/lydiasun1/portfolio">here</a>, or to
+            <a href="https://github.com/lydiasun1/portfolio" target="_blank" rel="noopener noreferrer">here</a>, or to
             leave commments and suggestions.
           </p>
         </Tab>

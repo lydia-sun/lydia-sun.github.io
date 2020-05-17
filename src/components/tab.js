@@ -36,9 +36,9 @@ class Tab extends React.Component {
                 this.props.handler()
               }
         }
-        className={`tab + ${
+        className={`tab ${
           this.state.display ? "opened-tab" : "closed-tab"
-        } + ${this.props.display ? "one-open" : "all-closed"}`}
+        } ${this.props.display ? "one-open" : "all-closed"}`}
         positionTransition={tabOpen}
         whileHover={{ scale: this.props.disabled || isMobileOnly ? 1.0 : 1.04 }}
       >
