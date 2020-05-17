@@ -1,5 +1,6 @@
 import React from "react"
 import { SocialIcon } from "react-social-icons"
+import { Link } from "gatsby"
 import "./layout.css"
 
 let iconColor = "#b491c8"
@@ -16,7 +17,10 @@ export default function Layout({ children }) {
   return (
     <div className="layout">
       <header>
-        <h1>Lydia Sun.</h1>
+        <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
+          <h1>Lydia Sun.</h1>
+        </Link>
+
         <div className="social-icons">
           <SocialIcon
             url="https://www.youtube.com/user/ghravel"

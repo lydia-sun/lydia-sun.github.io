@@ -151,7 +151,7 @@ class Folder extends React.Component {
           </Card>
           <Card
             title="PSoC Drawing Tablet"
-            desc="A contactless tablet drawing tablet."
+            desc="A contactless drawing tablet."
             imgSrc={tablet}
             width={400}
           >
@@ -207,12 +207,13 @@ class Folder extends React.Component {
             <div className="hover-card">
               <h2>Programming</h2>
               <div className="hover-prompt">
-              <MobileView>
-                <p>(tap for details)</p>
-              </MobileView>
-              <BrowserView>
-                <p>(hover for details)</p>             
-              </BrowserView></div>
+                <MobileView>
+                  <p>(tap for details)</p>
+                </MobileView>
+                <BrowserView>
+                  <p>(hover for details)</p>
+                </BrowserView>
+              </div>
             </div>
             <div className="overlay">
               <div className="overlay-text">
@@ -229,12 +230,13 @@ class Folder extends React.Component {
             <div className="hover-card">
               <h2>Technologies</h2>
               <div className="hover-prompt">
-              <MobileView>
-                <p>(tap for details)</p>
-              </MobileView>
-              <BrowserView>
-                <p>(hover for details)</p>             
-              </BrowserView></div>
+                <MobileView>
+                  <p>(tap for details)</p>
+                </MobileView>
+                <BrowserView>
+                  <p>(hover for details)</p>
+                </BrowserView>
+              </div>
             </div>
             <div className="overlay">
               <div className="overlay-text">
@@ -249,12 +251,13 @@ class Folder extends React.Component {
             <div className="hover-card">
               <h2>Spoken Languages</h2>
               <div className="hover-prompt">
-              <MobileView>
-                <p>(tap for details)</p>
-              </MobileView>
-              <BrowserView>
-                <p>(hover for details)</p>             
-              </BrowserView></div>
+                <MobileView>
+                  <p>(tap for details)</p>
+                </MobileView>
+                <BrowserView>
+                  <p>(hover for details)</p>
+                </BrowserView>
+              </div>
             </div>
             <div className="overlay">
               <div className="overlay-text">
