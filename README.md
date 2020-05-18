@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="40" />
   </a>
 </p>
 <h1 align="center">
@@ -21,3 +21,10 @@ Visit live site at [lydiasun.me](lydiasun.me)
 - [react-social-icons](https://www.npmjs.com/package/react-social-icons)
 - [react-png-flipcard](https://www.npmjs.com/package/react-png-flipcard)
 - [react-device-detect](https://www.npmjs.com/package/react-device-detect)
+
+## To do (in order of priority)
+
+- Make projects and skills tabs mobile-friendly
+- Darken background on tab opening
+- Make tab close triggerable by clicking outside of tab
+- Refactor code into more organized chunks (React components, organize CSS)
