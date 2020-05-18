@@ -48,8 +48,8 @@ class Tab extends React.Component {
         <button className="tab-button"
         onClick={
           this.props.disabled ||
-          !isMobileOnly ||
-          (isMobileOnly && !this.props.display)
+          !isMobile ||
+          (isMobile&& !this.props.display)
             ? null
             : e => {
                 this.handler(e)
