@@ -32,7 +32,7 @@ class Tab extends React.Component {
       <motion.div
         id={this.props.idx}
         onClick={
-          this.props.disabled // || (isMobile && this.props.display)
+          this.props.disabled || (isMobile && this.props.display)
             ? null
             : e => {
                 this.handler(e)
@@ -46,16 +46,16 @@ class Tab extends React.Component {
         whileHover={{ scale: this.props.disabled || isMobile ? 1.0 : 1.04 }}
       >
         <button className="tab-button"
-        // onClick={
-        //   this.props.disabled ||
-        //   !isMobileOnly ||
-        //   (isMobileOnly && !this.props.display)
-        //     ? null
-        //     : e => {
-        //         this.handler(e)
-        //         this.props.handler()
-        //       }
-        // }
+        onClick={
+          this.props.disabled ||
+          !isMobileOnly ||
+          (isMobileOnly && !this.props.display)
+            ? null
+            : e => {
+                this.handler(e)
+                this.props.handler()
+              }
+        }
         >
           {this.props.label}
         </button>
