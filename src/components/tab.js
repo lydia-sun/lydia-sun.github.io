@@ -49,11 +49,11 @@ class Tab extends React.Component {
         onClick={
           this.props.disabled ||
           !isMobile ||
-          (isMobile&& !this.props.display)
+          (isMobile && !this.props.display)
             ? null
             : e => {
                 this.handler(e)
-                this.props.handler()
+                this.props.handler(e)
               }
         }
         >
