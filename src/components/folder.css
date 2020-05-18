@@ -83,8 +83,8 @@
 
 .internship img {
   flex-basis: 100%;
-  max-width: 8rem;
-  max-height: 8rem;
+  /* max-width: 8rem; */
+  /* max-height: 8rem; */
 }
 
 #academic .tab-content {
@@ -148,15 +148,11 @@
   border-radius: 50%;
 }
 
-/* @media (hover: hover) and (pointer: fine) {
+@media (hover: hover) and (pointer: fine) {
   .hover-container:hover .overlay {
     opacity: 1;
+    transition: opacity 0.25s ease;
   }
-} */
-
-.hover-container:hover .overlay {
-  opacity: 1;
-  transition: opacity 0.25s ease;
 }
 
 .overlay-text {

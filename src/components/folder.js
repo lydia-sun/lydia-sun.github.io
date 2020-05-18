@@ -3,7 +3,7 @@ import Tab from "./tab"
 import Card from "./card"
 import "./folder.css"
 import { motion } from "framer-motion"
-import { BrowserView, MobileOnlyView } from "react-device-detect"
+import { BrowserView, MobileView, isMobile } from "react-device-detect"
 import { SocialIcon } from "react-social-icons"
 import lydia from "./img/lydia.jpeg"
 import meraki from "./img/meraki.png"
@@ -38,9 +38,10 @@ class Folder extends React.Component {
     this.setState({ opened: false })
   }
 
-  handler(name) {
-    console.log(name)
-    this.setState({ opened: !this.state.opened })
+  handler(e) {
+    if (e.target.tagName !== "path") {
+      this.setState({ opened: !this.state.opened })
+    }
   }
 
   render() {
@@ -65,7 +66,11 @@ class Folder extends React.Component {
             primarily interested in Internet of Things and full-stack
             engineering.
           </p>
-          <SocialIcon url="github.com/lydiasun1/portflio" style={iconStyle} bgColor={iconColor}></SocialIcon>
+          <SocialIcon
+            url="https://github.com/lydiasun1/portfolio"
+            style={iconStyle}
+            bgColor={iconColor}
+          ></SocialIcon>
           <p className="small-text">Visit the site repo here.</p>
         </Tab>
         <Tab
@@ -221,9 +226,9 @@ class Folder extends React.Component {
             <div className="hover-card">
               <h2>Programming</h2>
               <div className="hover-prompt">
-                <MobileOnlyView>
+                <MobileView>
                   <p>(tap for details)</p>
-                </MobileOnlyView>
+                </MobileView>
                 <BrowserView>
                   <p>(hover for details)</p>
                 </BrowserView>
@@ -244,9 +249,9 @@ class Folder extends React.Component {
             <div className="hover-card">
               <h2>Technologies</h2>
               <div className="hover-prompt">
-                <MobileOnlyView>
+                <MobileView>
                   <p>(tap for details)</p>
-                </MobileOnlyView>
+                </MobileView>
                 <BrowserView>
                   <p>(hover for details)</p>
                 </BrowserView>
@@ -265,9 +270,9 @@ class Folder extends React.Component {
             <div className="hover-card">
               <h2>Spoken Languages</h2>
               <div className="hover-prompt">
-                <MobileOnlyView>
+                <MobileView>
                   <p>(tap for details)</p>
-                </MobileOnlyView>
+                </MobileView>
                 <BrowserView>
                   <p>(hover for details)</p>
                 </BrowserView>
@@ -296,7 +301,12 @@ class Folder extends React.Component {
         >
           <div className="hover-container img-hover">
             <img src={anthro} alt="anthro" />
-            <div className="overlay">
+            <div
+              className="overlay"
+              style={
+                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
+              }
+            >
               <div className="overlay-text">
                 <p>Anthropology</p>
               </div>
@@ -304,7 +314,12 @@ class Folder extends React.Component {
           </div>
           <div className="hover-container img-hover">
             <img src={film} alt="film" />
-            <div className="overlay">
+            <div
+              className="overlay"
+              style={
+                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
+              }
+            >
               <div className="overlay-text">
                 <p>Filmmaking</p>
               </div>
@@ -312,7 +327,12 @@ class Folder extends React.Component {
           </div>
           <div className="hover-container img-hover">
             <img src={earth} alt="earth" />
-            <div className="overlay">
+            <div
+              className="overlay"
+              style={
+                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
+              }
+            >
               <div className="overlay-text">
                 <p>Sustainability</p>
               </div>
@@ -320,7 +340,12 @@ class Folder extends React.Component {
           </div>
           <div className="hover-container img-hover">
             <img src={book} alt="book" />
-            <div className="overlay">
+            <div
+              className="overlay"
+              style={
+                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
+              }
+            >
               <div className="overlay-text">
                 <p>Reading</p>
               </div>
@@ -328,7 +353,12 @@ class Folder extends React.Component {
           </div>
           <div className="hover-container img-hover">
             <img src={dance} alt="dance" />
-            <div className="overlay">
+            <div
+              className="overlay"
+              style={
+                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
+              }
+            >
               <div className="overlay-text">
                 <p>Dance</p>
               </div>

@@ -1,6 +1,6 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { isMobileOnly } from "react-device-detect"
+import { isMobile } from "react-device-detect"
 import "../components/tab.css"
 
 class Tab extends React.Component {
@@ -17,7 +17,10 @@ class Tab extends React.Component {
   }
 
   handler(e) {
-    this.setState({ display: !this.state.display })
+    console.log(e.target.tagName);
+    if (e.target.tagName !== "path") {
+      this.setState({ display: !this.state.display })
+    }
   }
 
   render() {
@@ -29,30 +32,30 @@ class Tab extends React.Component {
       <motion.div
         id={this.props.idx}
         onClick={
-          this.props.disabled || (isMobileOnly && this.props.display)
+          this.props.disabled || (isMobile && this.props.display)
             ? null
             : e => {
                 this.handler(e)
-                this.props.handler()
+                this.props.handler(e)
               }
         }
-        className={`tab ${
-          this.state.display ? "opened-tab" : "closed-tab"
-        } ${this.props.display ? "one-open" : "all-closed"}`}
+        className={`tab ${this.state.display ? "opened-tab" : "closed-tab"} ${
+          this.props.display ? "one-open" : "all-closed"
+        }`}
         positionTransition={tabOpen}
-        whileHover={{ scale: this.props.disabled || isMobileOnly ? 1.0 : 1.04 }}
+        whileHover={{ scale: this.props.disabled || isMobile ? 1.0 : 1.04 }}
       >
-        <button
-          onClick={
-            this.props.disabled ||
-            !isMobileOnly ||
-            (isMobileOnly && !this.props.display)
-              ? null
-              : e => {
-                  this.handler(e)
-                  this.props.handler()
-                }
-          }
+        <button className="tab-button"
+        // onClick={
+        //   this.props.disabled ||
+        //   !isMobileOnly ||
+        //   (isMobileOnly && !this.props.display)
+        //     ? null
+        //     : e => {
+        //         this.handler(e)
+        //         this.props.handler()
+        //       }
+        // }
         >
           {this.props.label}
         </button>

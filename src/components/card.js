@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import FlipCard from "react-png-flipcard"
-import { isMobileOnly, BrowserView, MobileOnlyView } from "react-device-detect"
+import { isMobile, BrowserView, MobileView } from "react-device-detect"
 import "./card.css"
 
 export default function Card(props) {
@@ -9,7 +9,7 @@ export default function Card(props) {
   const [flip, setFlip] = useState(false)
   return (
     <FlipCard
-      manual={isMobileOnly}
+      manual={isMobile}
       flip={flip}
       front={
         <div
@@ -22,9 +22,9 @@ export default function Card(props) {
           <h2>{props.title}</h2>
           <p>{props.desc}</p>
           <div className="card-prompt">
-            <MobileOnlyView>
+            <MobileView>
               <p>(tap for details)</p>
-            </MobileOnlyView>
+            </MobileView>
             <BrowserView>
               <p>(hover for details)</p>
             </BrowserView>{" "}

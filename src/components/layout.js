@@ -17,7 +17,7 @@ export default function Layout({ children }) {
   return (
     <div className="layout">
       <header>
-        <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
+        <Link id="name" to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
           <h1>Lydia Sun.</h1>
         </Link>
         <div className="social-icons">
