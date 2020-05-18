@@ -32,7 +32,7 @@ class Tab extends React.Component {
       <motion.div
         id={this.props.idx}
         onClick={
-          this.props.disabled || (isMobile && this.props.display)
+          this.props.disabled // || (isMobile && this.props.display)
             ? null
             : e => {
                 this.handler(e)
