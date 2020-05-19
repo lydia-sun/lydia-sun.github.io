@@ -17,7 +17,7 @@ class Tab extends React.Component {
   }
 
   handler(e) {
-    console.log(e.target.tagName);
+    // console.log(e.target.tagName)
     if (e.target.tagName !== "path") {
       this.setState({ display: !this.state.display })
     }
@@ -28,11 +28,26 @@ class Tab extends React.Component {
       ease: "easeOut",
       duration: 0.25,
     }
+    if (this.props.disabled) { // a disabled tab is not clickable and has no content
+      return (
+        <motion.div
+          id={this.props.idx}
+          className={`tab closed-tab disabled ${
+            this.props.display ? "one-open" : "all-closed"
+          }`}
+          positionTransition={tabOpen}
+        >
+          <div className="visibility-wrapper">
+            <div className="tab-content"></div>
+          </div>
+        </motion.div>
+      )
+    }
     return (
       <motion.div
         id={this.props.idx}
         onClick={
-          this.props.disabled || (isMobile && this.props.display)
+          isMobile && this.props.display
             ? null
             : e => {
                 this.handler(e)
@@ -43,19 +58,18 @@ class Tab extends React.Component {
           this.props.display ? "one-open" : "all-closed"
         }`}
         positionTransition={tabOpen}
-        whileHover={{ scale: this.props.disabled || isMobile ? 1.0 : 1.04 }}
+        whileHover={{ scale: isMobile ? 1.0 : 1.04 }}
       >
-        <button className="tab-button"
-        onClick={
-          this.props.disabled ||
-          !isMobile ||
-          (isMobile && !this.props.display)
-            ? null
-            : e => {
-                this.handler(e)
-                this.props.handler(e)
-              }
-        }
+        <button
+          className="tab-button"
+          onClick={
+            !isMobile || (isMobile && !this.props.display)
+              ? null
+              : e => {
+                  this.handler(e)
+                  this.props.handler(e)
+                }
+          }
         >
           {this.props.label}
         </button>

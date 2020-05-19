@@ -4,8 +4,10 @@ import Card from "./card"
 import HoverComponent from "./hover-component"
 import "./global.css"
 import "./folder.css"
+
 import { motion } from "framer-motion"
 import { SocialIcon } from "react-social-icons"
+
 import lydia from "./img/lydia.jpeg"
 import meraki from "./img/meraki.png"
 import twitch from "./img/twitch.png"
@@ -40,6 +42,7 @@ class Folder extends React.Component {
   }
 
   handler(e) {
+    // prevent link clicks from toggling tabs
     if (e.target.tagName !== "path") {
       this.setState({ opened: !this.state.opened })
     }
@@ -142,7 +145,7 @@ class Folder extends React.Component {
           </div>
         </Tab>
         <Tab
-          idx="academic"
+          idx="projects"
           label="Projects"
           className="projects"
           handler={this.handler}
@@ -223,7 +226,7 @@ class Folder extends React.Component {
           handler={this.handler}
           display={this.state.opened}
         >
-          <HoverComponent skillName="Programming">
+          <HoverComponent skillName="programming">
             <ul>
               <li>Python</li>
               <li>Java</li>
@@ -232,14 +235,14 @@ class Folder extends React.Component {
               <li>Verilog</li>
             </ul>
           </HoverComponent>
-          <HoverComponent skillName="Technologies">
+          <HoverComponent skillName="technologies">
             <ul>
               <li>Arduino</li>
               <li>React</li>
               <li>Integrated circuits</li>
             </ul>
           </HoverComponent>
-          <HoverComponent skillName="Spoken Languages">
+          <HoverComponent skillName="spoken languages">
             <ul>
               <li>English (fluent)</li>
               <li>Mandarin Chinese (proficient)</li>

@@ -8,13 +8,12 @@
   top: 3% !important;
   left: 5% !important;
   height: 100%;
-  /* z-index: 1; */
 }
 
 .closed-tab.one-open {
   max-height: 10% !important;
   overflow: hidden;
-  /* top: 100%; */
+  top: 100%;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 0.25s, opacity 0.25s linear,
@@ -28,52 +27,15 @@
   transition: opacity 0.25s linear, max-height 0.25s ease-in;
 }
 
-.one-open {
-  top: 100%;
+.disabled {
+  width: 100%;
 }
 
-#frontTab.all-closed {
-  top: 70%;
-}
-
-#interests.all-closed {
-  top: 45%;
-}
-
-#skills.all-closed {
-  top: 35%;
-}
-
-#academic.all-closed {
-  top: 25%;
-}
-
-#work.all-closed {
-  top: 15%;
-}
-
-#about.all-closed {
-  top: 5%;
-}
-
-#about {
-  left: 2%;
-}
-
-#work {
-  left: 3.2%;
-}
-
-#academic {
-  left: 4.4%;
-}
-
-#skills {
-  left: 5.6%;
-}
-
-#interests {
-  left: 6.8%;
+.disabled .visibility-wrapper {
+  height: 100%;
+  background-color: #f7f0fa;
+  border-radius: 0px;
+  border-style: dashed none none none;
 }
 
 .visibility-wrapper {

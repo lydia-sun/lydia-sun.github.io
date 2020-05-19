@@ -11,28 +11,48 @@
   border-color: #dfc0eb;
 }
 
-#frontTab {
-  width: 100%;
+#frontTab.all-closed {
+  top: 70%;
 }
 
-#frontTab .visibility-wrapper {
-  height: 100%;
-  background-color: #f7f0fa;
-  border-radius: 0px;
-  border-style: dashed none none none;
+#interests.all-closed {
+  top: 45%;
 }
 
-#frontTab button {
-  visibility: hidden;
+#skills.all-closed {
+  top: 35%;
 }
 
-.tab-content img {
-  border-radius: 50%;
-  height: auto;
-  width: auto;
-  max-width: 8rem;
-  max-height: 8rem;
-  background-color: #f7f0fa;
+#projects.all-closed {
+  top: 25%;
+}
+
+#work.all-closed {
+  top: 15%;
+}
+
+#about.all-closed {
+  top: 5%;
+}
+
+#about {
+  left: 2%;
+}
+
+#work {
+  left: 3.2%;
+}
+
+#projects {
+  left: 4.4%;
+}
+
+#skills {
+  left: 5.6%;
+}
+
+#interests {
+  left: 6.8%;
 }
 
 #about img {
@@ -87,17 +107,8 @@
   /* max-height: 8rem; */
 }
 
-#academic .tab-content {
+#projects .tab-content {
   align-items: space-around;
-}
-
-#interests img {
-  border-style: solid;
-  border-width: 0.5rem;
-  border-color: #dfc0eb;
-  margin: 0;
-  width: 8rem;
-  height: 8rem;
 }
 
 @media screen and (max-width: 650px) {

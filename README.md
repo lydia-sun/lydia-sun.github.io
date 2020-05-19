@@ -1,30 +1,28 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="40" />
+  <a href="https:/lydiasun.me">
+    <img alt="lydiasun" src="./src/components/img/favicon.png" width="50" />
   </a>
 </p>
+<a href="https:/lydiasun.me">
 <h1 align="center">
-  Made with Gatsby by JS
+  lydiasun.me
 </h1>
+</a>
 
-My first React site, made with Gatsby by JS. Lots of trial and error, and duct taping pieces of code together.
+My first React site - duct taped some pieces of code together.
 
-Visit live site at [lydiasun.me](lydiasun.me)
-
-## Used Libraries
+## Libraries Used
 
 - [Framer Motion](https://www.framer.com/api/motion/)
 
-## Used Packages
+## Packages Used
 
 - [react-social-icons](https://www.npmjs.com/package/react-social-icons)
 - [react-png-flipcard](https://www.npmjs.com/package/react-png-flipcard)
 - [react-device-detect](https://www.npmjs.com/package/react-device-detect)
 
-## To do (in order of priority)
+## To do
 
-- Make projects and skills tabs mobile-friendly
-- Darken background on tab opening
-- Make tab close triggerable by clicking outside of tab
-- Refactor code into more organized chunks (React components, organize CSS)
+1. Create mobile-friendly versions of hoverable components
+2. Refactor code into more organized chunks (React components, organize CSS)
