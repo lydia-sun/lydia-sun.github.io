@@ -1,6 +1,6 @@
 import React from "react"
 import { MobileView, BrowserView } from "react-device-detect"
-import "./HoverComponent.css"
+import "./hover-component.css"
 import "./global.css"
 
 export default function HoverComponent(props) {

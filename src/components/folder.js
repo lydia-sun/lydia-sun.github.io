@@ -1,7 +1,7 @@
 import React from "react"
 import Tab from "./tab"
 import Card from "./card"
-import HoverComponent from "./HoverComponent"
+import HoverComponent from "./hover-component"
 import "./global.css"
 import "./folder.css"
 import { motion } from "framer-motion"
