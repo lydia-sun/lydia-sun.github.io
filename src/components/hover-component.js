@@ -31,7 +31,7 @@ export default function HoverComponent(props) {
           <h2>{props.skillName}</h2>
           <div className="hover-prompt">
             <p className="prompt-text">(hover for details)</p>
-          </div>{" "}
+          </div>
         </BrowserView>
       </div>
     )
@@ -59,7 +59,7 @@ export default function HoverComponent(props) {
             opacity: 1.0,
             transition: { duration: 0.25 },
           }}
-          style={isMobile ? mobileStyle : defaultStyle}
+          style={ isMobile ? mobileStyle : defaultStyle}
         >
           <div className="overlay-text">
             <MobileView>
