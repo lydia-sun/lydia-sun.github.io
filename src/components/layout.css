@@ -4,8 +4,8 @@
   height: 100%;
   position: relative;
   overflow: auto;
-    background-color: #f7f0fa;
-    /* background-color: #6d4b7c; */
+  background-color: #f7f0fa;
+  /* background-color: #6d4b7c; */
 }
 
 .social-icons {

@@ -1,9 +1,10 @@
 import React from "react"
 import Tab from "./tab"
 import Card from "./card"
+import HoverComponent from "./HoverComponent"
+import "./global.css"
 import "./folder.css"
 import { motion } from "framer-motion"
-import { BrowserView, MobileView, isMobile } from "react-device-detect"
 import { SocialIcon } from "react-social-icons"
 import lydia from "./img/lydia.jpeg"
 import meraki from "./img/meraki.png"
@@ -222,76 +223,30 @@ class Folder extends React.Component {
           handler={this.handler}
           display={this.state.opened}
         >
-          <div className="hover-container">
-            <div className="hover-card">
-              <h2>Programming</h2>
-              <div className="hover-prompt">
-                <MobileView>
-                  <p>(tap for details)</p>
-                </MobileView>
-                <BrowserView>
-                  <p>(hover for details)</p>
-                </BrowserView>
-              </div>
-            </div>
-            <div className="overlay">
-              <div className="overlay-text">
-                <ul>
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>HTML/CSS</li>
-                  <li>Verilog</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="hover-container">
-            <div className="hover-card">
-              <h2>Technologies</h2>
-              <div className="hover-prompt">
-                <MobileView>
-                  <p>(tap for details)</p>
-                </MobileView>
-                <BrowserView>
-                  <p>(hover for details)</p>
-                </BrowserView>
-              </div>
-            </div>
-            <div className="overlay">
-              <div className="overlay-text">
-                <ul>
-                  <li>Arduino</li>
-                  <li>React</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="hover-container">
-            <div className="hover-card">
-              <h2>Spoken Languages</h2>
-              <div className="hover-prompt">
-                <MobileView>
-                  <p>(tap for details)</p>
-                </MobileView>
-                <BrowserView>
-                  <p>(hover for details)</p>
-                </BrowserView>
-              </div>
-            </div>
-            <div className="overlay">
-              <div className="overlay-text">
-                <ul>
-                  <li>English (Fluent)</li>
-                  <li>Mandarin Chinese (Proficient)</li>
-                  <li>French (Proficient)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div
-            className="hover-container"
-            style={{ backgroundColor: `oldlace` }}
-          ></div>
+          <HoverComponent skillName="Programming">
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>HTML/CSS</li>
+              <li>Verilog</li>
+            </ul>
+          </HoverComponent>
+          <HoverComponent skillName="Technologies">
+            <ul>
+              <li>Arduino</li>
+              <li>React</li>
+              <li>Integrated circuits</li>
+            </ul>
+          </HoverComponent>
+          <HoverComponent skillName="Spoken Languages">
+            <ul>
+              <li>English (fluent)</li>
+              <li>Mandarin Chinese (proficient)</li>
+              <li>French (proficient)</li>
+            </ul>
+          </HoverComponent>
+          <HoverComponent placeholder />
         </Tab>
         <Tab
           idx="interests"
@@ -299,71 +254,21 @@ class Folder extends React.Component {
           handler={this.handler}
           display={this.state.opened}
         >
-          <div className="hover-container img-hover">
-            <img src={anthro} alt="anthro" />
-            <div
-              className="overlay"
-              style={
-                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
-              }
-            >
-              <div className="overlay-text">
-                <p>Anthropology</p>
-              </div>
-            </div>
-          </div>
-          <div className="hover-container img-hover">
-            <img src={film} alt="film" />
-            <div
-              className="overlay"
-              style={
-                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
-              }
-            >
-              <div className="overlay-text">
-                <p>Filmmaking</p>
-              </div>
-            </div>
-          </div>
-          <div className="hover-container img-hover">
-            <img src={earth} alt="earth" />
-            <div
-              className="overlay"
-              style={
-                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
-              }
-            >
-              <div className="overlay-text">
-                <p>Sustainability</p>
-              </div>
-            </div>
-          </div>
-          <div className="hover-container img-hover">
-            <img src={book} alt="book" />
-            <div
-              className="overlay"
-              style={
-                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
-              }
-            >
-              <div className="overlay-text">
-                <p>Reading</p>
-              </div>
-            </div>
-          </div>
-          <div className="hover-container img-hover">
-            <img src={dance} alt="dance" />
-            <div
-              className="overlay"
-              style={
-                isMobile ? { opacity: `0.9`, backgroundColor: `#b491c8` } : {}
-              }
-            >
-              <div className="overlay-text">
-                <p>Dance</p>
-              </div>
-            </div>
-          </div>
+          <HoverComponent image={anthro}>
+            <p>Anthropology</p>
+          </HoverComponent>
+          <HoverComponent image={film}>
+            <p>Filmmaking</p>
+          </HoverComponent>
+          <HoverComponent image={earth}>
+            <p>Sustainability</p>
+          </HoverComponent>
+          <HoverComponent image={book}>
+            <p>Reading</p>
+          </HoverComponent>
+          <HoverComponent image={dance}>
+            <p>Dance</p>
+          </HoverComponent>
         </Tab>
         <Tab
           idx="frontTab"

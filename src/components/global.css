@@ -1,7 +1,3 @@
-html {
-
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -42,6 +38,13 @@ p {
   font-size: 0.9rem;
   text-align: center;
   margin: 0;
+}
+
+.prompt-text {
+  text-align: center;
+  font-size: smaller;
+  margin: 0.3rem;
+  color: #dfc0eb;
 }
 
 img {
