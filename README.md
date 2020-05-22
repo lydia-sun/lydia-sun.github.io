@@ -24,5 +24,6 @@ My first React site - duct taped some pieces of code together.
 
 ## To do
 
-1. Create mobile-friendly versions of hoverable components
-2. Refactor code into more organized chunks (React components, organize CSS)
+1. Alternative to react-device-detect
+2. Work on mobile-friendly dimensions
+3. Pick more appealing fonts / colors
