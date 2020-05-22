@@ -28,7 +28,8 @@ class Tab extends React.Component {
       ease: "easeOut",
       duration: 0.25,
     }
-    if (this.props.disabled) { // a disabled tab is not clickable and has no content
+    if (this.props.disabled) {
+      // a disabled tab is not clickable and has no content
       return (
         <motion.div
           id={this.props.idx}
@@ -46,14 +47,10 @@ class Tab extends React.Component {
     return (
       <motion.div
         id={this.props.idx}
-        onClick={
-          isMobile && this.props.display
-            ? null
-            : e => {
-                this.handler(e)
-                this.props.handler(e)
-              }
-        }
+        onClick={e => {
+          this.handler(e)
+          this.props.handler(e)
+        }}
         className={`tab ${this.state.display ? "opened-tab" : "closed-tab"} ${
           this.props.display ? "one-open" : "all-closed"
         }`}
@@ -62,14 +59,14 @@ class Tab extends React.Component {
       >
         <button
           className="tab-button"
-          onClick={
-            !isMobile || (isMobile && !this.props.display)
-              ? null
-              : e => {
-                  this.handler(e)
-                  this.props.handler(e)
-                }
-          }
+          // onClick={
+          //   !isMobile || (isMobile && !this.props.display)
+          //     ? null
+          //     : e => {
+          //         this.handler(e)
+          //         this.props.handler(e)
+          //       }
+          // }
         >
           {this.props.label}
         </button>

@@ -1,24 +1,16 @@
 import React from "react"
-import { MobileView, BrowserView, isMobile } from "react-device-detect"
+import { MobileView, BrowserView } from "react-device-detect"
 import { motion } from "framer-motion"
 import "./hover-component.css"
 import "./global.css"
 
 export default function HoverComponent(props) {
   var bgContent
-  let lightPink = "#dfc0eb"
-  let purple = "#b491c8"
 
   let mobileStyle = {
     backgroundColor: props.image ? `#b491c8` : `#b491c8`,
     borderRadius: props.image ? `50%` : `1.5rem`,
     opacity: props.image ? `0.9` : `0.75`,
-  }
-
-  let defaultStyle = {
-    backgroundColor: props.image ? lightPink : purple,
-    borderRadius: props.image ? `50%` : `1.5rem`,
-    opacity: `0`,
   }
 
   if (props.image) {
@@ -53,21 +45,25 @@ export default function HoverComponent(props) {
         }`}
       >
         {bgContent}
-        <motion.div
-          className="overlay"
-          whileHover={ isMobile ? {} : {
-            opacity: 1.0,
-            transition: { duration: 0.25 },
-          }}
-          style={ isMobile ? mobileStyle : defaultStyle}
-        >
-          <div className="overlay-text">
-            <MobileView>
+        <BrowserView>
+          <motion.div
+            className="overlay"
+            whileHover={{
+              opacity: 1.0,
+              transition: { duration: 0.25 },
+            }}
+          >
+            <div className="overlay-text">{props.children}</div>
+          </motion.div>
+        </BrowserView>
+        <MobileView> 
+          <div className="overlay" style={mobileStyle}>
+            <div className="overlay-text">
               <h2>{props.skillName}</h2>
-            </MobileView>
-            {props.children}
+              {props.children}
+            </div>
           </div>
-        </motion.div>
+        </MobileView>
       </div>
     )
   }

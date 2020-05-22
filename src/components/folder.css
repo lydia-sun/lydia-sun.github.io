@@ -8,7 +8,7 @@
   position: relative;
   height: 100%;
   border-width: thin;
-  border-color: #dfc0eb;
+  border-color: var(--light-focus-pink);
 }
 
 #frontTab.all-closed {
@@ -58,7 +58,7 @@
 #about img {
   border-style: solid;
   border-width: 0.5rem;
-  border-color: #dfc0eb;
+  border-color: var(--light-focus-pink);
   max-width: 8rem;
   max-height: 8rem;
 }
@@ -73,7 +73,7 @@
   text-align: center;
   font-size: smaller;
   margin: 0.3rem;
-  color: #dfc0eb;
+  color: var(--accent-purple);
 }
 
 .internship {
@@ -86,7 +86,7 @@
   background-color: white;
   padding: 0rem 1rem;
   border-radius: 2rem;
-  box-shadow: 0.5rem 0.5rem 0 0 #dfc0eb;
+  box-shadow: 0.5rem 0.5rem 0 0 var(--light-focus-pink);
 }
 
 .internship h2 {
@@ -98,7 +98,7 @@
   flex-basis: 100%;
   text-align: center;
   font-size: 0.75rem;
-  color: #dfc0eb;
+  color: var(--accent-purple);
 }
 
 .internship img {

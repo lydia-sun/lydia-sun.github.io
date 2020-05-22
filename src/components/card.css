@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
   background-color: white;
-  box-shadow: 0.5rem 0.5rem 0 0 #dfc0eb;
+  box-shadow: 0.5rem 0.5rem 0 0 var(--light-focus-pink);
 }
 
 .card-content p {
@@ -41,5 +41,5 @@
 
 .card-prompt p {
   font-size: 0.7rem;
-  color: #dfc0eb;
+  color: var(--accent-purple);
 }

@@ -1,3 +1,11 @@
+:root {
+  --light-bg-purple: #f7f0fa;
+  --dark-purple: #663a82;
+  --light-focus-pink: #dfc0eb;
+  --accent-purple: #b491c8;
+  --subheading-purple: #89609e;
+}
+
 html,
 body,
 #___gatsby,
@@ -7,7 +15,7 @@ body,
 }
 
 html {
-  background-color: #f7f0fa;
+  background-color: var(--light-bg-purple);
 }
 
 header {
@@ -20,40 +28,40 @@ header {
 
 h1 {
   font-size: 3rem;
-  color: #663a82;
+  color: var(--subheading-purple);
   padding: 0;
   margin: 0;
   transition: color 0.25s ease;
 }
 
 h1:hover {
-  color: #dfc0eb;
+  color: var(--light-focus-pink);
   transition: color 0.25s ease;
 }
 
 h2 {
-  color: #89609e;
+  color: var(--subheading-purple);
   font-size: 1.3rem;
   text-align: center;
   margin: 0;
 }
 
 h3 {
-  color: #89609e;
+  color: var(--subheading-purple);
   font-size: 1rem;
   font-weight: 100;
   margin: 0;
 }
 
 p {
-  color: #89609e;
+  color: var(--dark-purple);
   font-size: 0.9rem;
   text-align: center;
   margin: 0;
 }
 
 li {
-  color: #89609e;
+  color: var(--dark-purple);
   font-size: 0.9rem;
 }
 
@@ -61,7 +69,7 @@ li {
   text-align: center;
   font-size: smaller;
   margin: 0.3rem;
-  color: #dfc0eb;
+  color: var(--accent-purple);
 }
 
 img {
@@ -70,17 +78,17 @@ img {
   width: auto;
   max-width: 8rem;
   max-height: 8rem;
-  background-color: #f7f0fa;
+  background-color: var(--light-bg-purple);
   margin: 0.75rem;
 }
 
 button {
   border-style: solid solid none;
   border-width: thin;
-  border-color: #dfc0eb;
+  border-color: var(--light-focus-pink);
   display: block;
   background-color: oldlace;
-  color: #89609e;
+  color: var(--accent-purple);
   padding: 0.1rem 1rem;
   border-radius: 15px 15px 0px 0px;
   position: relative;

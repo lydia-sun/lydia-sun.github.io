@@ -42,7 +42,7 @@
   background-color: oldlace;
   border-style: solid;
   border-width: thin;
-  border-color: #dfc0eb;
+  border-color: var(--light-focus-pink);
   border-radius: 0px 30px 0px 0px;
 }
 
