@@ -43,7 +43,8 @@ class Folder extends React.Component {
 
   handler(e) {
     // prevent link clicks from toggling tabs
-    if (e.target.tagName !== "path") {
+    // console.log(e.target.tagName);
+    if (e.target.tagName !== "path" && e.target.tagName !== "A") {
       this.setState({ opened: !this.state.opened })
     }
   }
@@ -65,17 +66,30 @@ class Folder extends React.Component {
           <img src={lydia} alt="lydia"></img>
           <p>
             Welcome to my page! I am a class of 2020 graduate from the
-            Massachusetts Institute of Technology (MIT). I am searching for a
-            full-time software engineering role in the Bay Area, CA. I'm
-            primarily interested in Internet of Things and full-stack
-            engineering.
+            Massachusetts Institute of Technology (MIT), with a B.S. in
+            Electrical Engineering & Computer Science. I am based in the San
+            Francisco Bay Area and am currently working as a Media Software
+            Engineer at{" "}
+            <a
+              href="https://airtime.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Airtime
+            </a>
+            . I love working with consumer electronics and IoT projects, and in
+            my free time I enjoy reading fantasy and sci-fi fiction,
+            long-distance running, and making YouTube videos.
           </p>
           <SocialIcon
             url="https://github.com/lydiasun1/portfolio"
             style={iconStyle}
             bgColor={iconColor}
           ></SocialIcon>
-          <p className="small-text">Visit the site repo here.</p>
+          <p className="small-text">
+            This site is a personal, just for fun project. Visit the site repo
+            here!
+          </p>
         </Tab>
         <Tab
           idx="work"
@@ -229,10 +243,9 @@ class Folder extends React.Component {
           <HoverComponent skillName="programming">
             <ul>
               <li>Python</li>
-              <li>Java</li>
+              <li>C/C++</li>
               <li>JavaScript</li>
               <li>HTML/CSS</li>
-              <li>Verilog</li>
             </ul>
           </HoverComponent>
           <HoverComponent skillName="technologies">

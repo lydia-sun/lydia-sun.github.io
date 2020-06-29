@@ -18,7 +18,7 @@ class Tab extends React.Component {
 
   handler(e) {
     // console.log(e.target.tagName)
-    if (e.target.tagName !== "path") {
+    if (e.target.tagName !== "path" & e.target.tagName !== "A") {
       this.setState({ display: !this.state.display })
     }
   }

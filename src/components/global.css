@@ -60,6 +60,16 @@ p {
   margin: 0;
 }
 
+a {
+  color: var(--accent-purple);
+  text-shadow: none;
+  background-image: none;
+}
+
+a:hover {
+  color: var(--dark-purple);
+}
+
 li {
   color: var(--dark-purple);
   font-size: 0.9rem;

@@ -1,10 +1,10 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https:/lydiasun.me">
+  <a href="https://lydiasun.me">
     <img alt="lydiasun" src="./src/components/img/favicon.png" width="50" />
   </a>
 </p>
-<a href="https:/lydiasun.me">
+<a href="https://lydiasun.me">
 <h1 align="center">
   lydiasun.me
 </h1>
