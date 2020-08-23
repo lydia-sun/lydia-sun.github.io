@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://lydiasun.me">
+  <a href="https://lydiasun.me" rel="noopener noreferrer" target="_blank">
     <img alt="lydiasun" src="./src/components/img/favicon.png" width="50" />
   </a>
 </p>

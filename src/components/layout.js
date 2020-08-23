@@ -22,11 +22,6 @@ export default function Layout({ children }) {
         </Link>
         <div className="social-icons">
           <SocialIcon
-            url="https://www.youtube.com/user/ghravel"
-            style={iconStyle}
-            bgColor={iconColor}
-          />
-          <SocialIcon
             className="icon"
             url="https://github.com/lydiasun1"
             style={iconStyle}
