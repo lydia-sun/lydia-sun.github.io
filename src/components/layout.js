@@ -23,7 +23,7 @@ export default function Layout({ children }) {
         <div className="social-icons">
           <SocialIcon
             className="icon"
-            url="https://github.com/lydiasun1"
+            url="https://github.com/lydia-sun"
             style={iconStyle}
             bgColor={iconColor}
           />

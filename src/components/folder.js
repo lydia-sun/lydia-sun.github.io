@@ -82,7 +82,7 @@ class Folder extends React.Component {
             long-distance running, and making YouTube videos.
           </p>
           <SocialIcon
-            url="https://github.com/lydiasun1/portfolio"
+            url="https://github.com/lydia-sun/portfolio"
             style={iconStyle}
             bgColor={iconColor}
           ></SocialIcon>
@@ -212,7 +212,7 @@ class Folder extends React.Component {
             </p>
             <p>Programming skills: Arduino, C++, Verilog</p>
             <SocialIcon
-              url="https://github.com/lydiasun1/6.111-final"
+              url="https://github.com/lydia-sun/6.111-final"
               style={iconStyle}
               bgColor={iconColor}
             ></SocialIcon>
