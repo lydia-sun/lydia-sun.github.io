@@ -9,6 +9,7 @@ import { motion } from "framer-motion"
 import { SocialIcon } from "react-social-icons"
 
 import lydia from "./img/lydia.jpeg"
+import airtime from "./img/airtime.png"
 import meraki from "./img/meraki.png"
 import twitch from "./img/twitch.png"
 import bose from "./img/bose.png"
@@ -79,7 +80,7 @@ class Folder extends React.Component {
             </a>
             . I love working with consumer electronics and IoT projects, and in
             my free time I enjoy reading fantasy and sci-fi fiction,
-            long-distance running, and making YouTube videos.
+            long-distance running, and urban dance.
           </p>
           <SocialIcon
             url="https://github.com/lydia-sun/lydia-sun.github.io"
@@ -97,6 +98,29 @@ class Folder extends React.Component {
           handler={this.handler}
           display={this.state.opened}
         >
+          <div className="internship">
+            <h2>Media Software Engineer</h2>
+            <p>Palo Alto, CA | Jul 2020 - present</p>
+            <img src = {airtime} alt="airtime" style={{borderRadius:`0%`}}></img>
+            <ul>
+              <li>
+               Maintain and improve media streaming instrastructure by providing new features 
+               and refining real time quality.
+              </li>
+              <li>
+                Design and architect a C++ API to correctly notify clients of relevant streams 
+                and their metadata.
+              </li>
+              <li>
+                Incorporate the API into iOS apps with objective C++
+                and Android apps with Java Native Interface (JNI).
+              </li>
+              <li>
+                Design and provide features such as network change resilience
+                and authentication error handling.
+              </li>
+            </ul>
+          </div>
           <div className="internship">
             <h2>Hardware Engineering Intern</h2>
             <p>San Francisco, CA | May - Aug 2019</p>
