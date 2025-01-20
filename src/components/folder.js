@@ -9,6 +9,7 @@ import { motion } from "framer-motion"
 import { SocialIcon } from "react-social-icons"
 
 import lydia from "./img/lydia.jpeg"
+import apple from "./img/apple.png"
 import airtime from "./img/airtime.png"
 import meraki from "./img/meraki.png"
 import twitch from "./img/twitch.png"
@@ -66,21 +67,9 @@ class Folder extends React.Component {
         >
           <img src={lydia} alt="lydia"></img>
           <p>
-            Welcome to my page! I am a class of 2020 graduate from the
-            Massachusetts Institute of Technology (MIT), with a B.S. in
-            Electrical Engineering & Computer Science. I am based in the San
-            Francisco Bay Area and am currently working as a Media Software
-            Engineer at{" "}
-            <a
-              href="https://airtime.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Airtime
-            </a>
-            . I love working with consumer electronics and IoT projects, and in
-            my free time I enjoy reading fantasy and sci-fi fiction,
-            long-distance running, and urban dance.
+            Welcome to my page! I am a software engineer with a degree in Electrical Engineering
+             and Computer Science. I am based in Seattle and am currently working as a Software
+            Engineer at Apple. In my free time I enjoy reading, running, and language learning.
           </p>
           <SocialIcon
             url="https://github.com/lydia-sun/lydia-sun.github.io"
@@ -99,25 +88,37 @@ class Folder extends React.Component {
           display={this.state.opened}
         >
           <div className="internship">
+            <h2>Software Engineer</h2>
+            <p>Seattle, WA | Jul 2023 - present</p>
+            <img src = {apple} alt="apple"></img>
+            <ul>
+              <li>
+                Build frameworks in Swift, SwiftUI, and Obj-C for internal use by other teams.
+              </li>
+              <li>
+                Collaborate with framework, client, and server teams to bring features to completion.
+              </li>
+              <li>
+                Designed and created a test application for running end to end flows, with the 
+                benefit of simplifying automation.
+              </li>
+            </ul>
+          </div>
+          <div className="internship">
             <h2>Media Software Engineer</h2>
             <p>Palo Alto, CA | Jul 2020 - present</p>
             <img src = {airtime} alt="airtime" style={{borderRadius:`0%`}}></img>
             <ul>
               <li>
-               Maintain and improve media streaming instrastructure by providing new features 
-               and refining real time quality.
+                Built and maintained services, including an authentication token distribution 
+                service, to support the media stack.
               </li>
               <li>
-                Design and architect a C++ API to correctly notify clients of relevant streams 
-                and their metadata.
+                Designed and implemented APIs for communication with internal media servers and components.
               </li>
               <li>
-                Incorporate the API into iOS apps with objective C++
-                and Android apps with Java Native Interface (JNI).
-              </li>
-              <li>
-                Design and provide features such as network change resilience
-                and authentication error handling.
+                Investigated new technologies for use in audio and video streaming, 
+                such as meeting recording and transcription.
               </li>
             </ul>
           </div>
@@ -267,9 +268,10 @@ class Folder extends React.Component {
           <HoverComponent skillName="programming">
             <ul>
               <li>Python</li>
+              <li>Swift/SwiftUI</li>
               <li>C/C++</li>
+              <li>Objective C</li>
               <li>JavaScript</li>
-              <li>HTML/CSS</li>
             </ul>
           </HoverComponent>
           <HoverComponent skillName="technologies">
@@ -284,6 +286,7 @@ class Folder extends React.Component {
               <li>English (fluent)</li>
               <li>Mandarin Chinese (proficient)</li>
               <li>French (proficient)</li>
+              <li>Spanish (basic)</li>
             </ul>
           </HoverComponent>
           <HoverComponent placeholder />
